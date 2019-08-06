@@ -323,12 +323,11 @@
                    <div class="maintop-detail" style="font-size: 12px;">
                        <br>
                        *受细则及条款限制。
-                       <!-- <b style="font-size: 12px;">*受细则及条款限制。</b> -->
                    </div>
                    <div class="btn-call-to-action">立即预定</div>
                </a>
    
-               <a class="opt-cue fadeIn" id="opt-cue">
+               <a class="opt-cue fadeIn" id="opt-cue" (click)="goDistance('section-one')">
                    <b>浏览更多优惠</b>
                    <span class="opt-arrow">
                        <i class="icon-home3"></i>
@@ -408,7 +407,6 @@
                                </div>
                                <div class="flight-arrive">
                                   <div class="field-group-departure">
-                                      <!-- <label for="destination-label" class="field-label label-input">目的地</label> -->
                                       <input type="text" id="destination-label" name="destination-label" placeholder="目的地"
                                        class="field-input-departure" autocomplete="off" onfocus="this.placeholder=''" onblur="this.placeholder='目的地'"
                                       />
@@ -426,9 +424,7 @@
                                       </div>
                                       
                               </div>
-                              <!-- <div class="calendar_1">
-                                          
-                              </div> -->
+                              
                               <div class="flight-cell-border">
                                       <div class="field-group">
                                               <span class="span-filled">回程日期</span>
@@ -476,7 +472,7 @@
        </div>
     <div class="tertiarypar">
         <div class="section-one" id="section-one">
-            <div class="header">
+            <div class="header" >
                 <span class="description-multiple-origins">看始发地的最新报价</span>
                 <div class="description-city">
                     <span class="description">

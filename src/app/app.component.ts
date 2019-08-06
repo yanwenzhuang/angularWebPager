@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +9,13 @@ import { Component } from '@angular/core';
               './app.componentbottom.scss' 
             ]
 })
+
+
 export class AppComponent {
-  title = 'myHomework';
+ 
+  goDistance(location: string): void {
+    window.location.hash = ''; 
+    window.location.hash = location;
+}
+
 }
