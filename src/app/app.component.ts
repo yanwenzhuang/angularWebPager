@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, Renderer2} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,15 +6,17 @@ import { Component} from '@angular/core';
   styleUrls: ['./app.component.scss',
               './app.componentfooter.scss',
               './app.componentmainTop.scss',
-              './app.componentbottom.scss' 
+              './app.componentbottom.scss'
             ]
 })
 
 
 export class AppComponent {
- 
+
+  constructor(private rd2:Renderer2){}
+
   goDistance(location: string): void {
-    window.location.hash = ''; 
+    window.location.hash = '';
     window.location.hash = location;
 }
 

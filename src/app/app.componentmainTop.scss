@@ -3,18 +3,34 @@
     height: 770px;
     color: #fff;
 }
-.image{
+@media screen and (min-width: 1024px){
+  .image{
     background-image: url(../assets/images/background.jpg);
     background-position: bottom center;
     background-size: cover;
+  }
 }
+@media screen and (min-width: 720px){
+  .image{
+    background-image: url(../assets/images/bg720.jpg);
+    background-position: bottom center;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 720px){
+  .image{
+    background-image: url(../assets/images/bg720.jpg);
+    background-position: bottom center;
+  }
+}
+
+
 .image-tab{
     width: 100%;
     height: 490px;
 }
 .message-wrapper{
     width: 960px;
-    height: 490px;
     margin: 0 auto;
 }
 /* a:-webkit-any-link {
@@ -109,10 +125,11 @@
     display: inline-block;
     height: 52px;
     margin-top: 14px;
+    margin-bottom: -8px;
 }
 .tabs{
     list-style: none;
-    max-width: 960px;
+    // max-width: 960px;
     display: table;
     padding: 0;
     height: 100%;
@@ -128,7 +145,7 @@
         border-left: 1px solid #ebedec;
     }
     a{
-        display: table; 
+        display: table;
         float: none;
         width: 100%;
         height: 100%;
@@ -146,7 +163,7 @@
         text-decoration: none;
         border: 1px solid transparent;
     }
-} 
+}
 #tab-active {
     color:#000;
     background: #ebedec;
@@ -189,7 +206,7 @@
     box-shadow: 0 0 0 1px #c6c2c1;
     border-radius: 8px;
     display: inline-block;
-} 
+}
 .label-color{
     color:#4c4c4c;
     margin: 0 10px;
@@ -200,7 +217,7 @@
     }
 }
 .span-color{
-    color:#0f748f; 
+    color:#0f748f;
     font-weight: bold;
     margin-left: 5px;
 }
@@ -308,7 +325,7 @@
     a:hover{
         color: #0f748f;
         text-decoration: underline;
-    } 
+    }
 }
 .book-trip-extras-medium-up{
     list-style: none;
@@ -331,7 +348,7 @@
 }
 .trip-redeem{
     padding: 0 1.25rem;
-    border-left: #d7d7d7 1px solid; 
+    border-left: #d7d7d7 1px solid;
 }
 .flight-booking{
     display: table;
@@ -395,7 +412,7 @@
     margin:0 auto;
     position: relative;
     height: 57.5px;
-    width: 479px;   
+    width: 479px;
 }
 .trip-type-selection{
     .ui-radio+label:before {
@@ -472,7 +489,7 @@
         display: none;
     }
     // .field-input-departure{
-    //     padding-top: 1em; 
+    //     padding-top: 1em;
     //     padding-bottom: 0.5em;
     // }
 
@@ -505,7 +522,7 @@
 }
 .depart-data{
     font-size: 11px;
-    color: #767676; 
+    color: #767676;
 }
 .field-group{
     .span-filled{
