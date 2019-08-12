@@ -74,6 +74,10 @@
     height: 312px;
     position: relative;
 }
+.cover img{
+  width: 467px;
+  height:311px ;
+}
 .secondary-promotion:nth-child(3n+3){
     clear: both;
     margin-left: 0;
@@ -291,19 +295,16 @@ a:hover{
   .content{
     .call-to-action{
       margin-top: 95px;
-      margin-right: -20%;
+      // margin-right: -20%;
     }
   }
   .promotion{
     position: relative;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
   }
-
-
 }
-
-
-
-
 .card{
     a:hover{
         text-decoration: none;
@@ -377,7 +378,7 @@ a:hover{
     }
 }
 .col-md-2{
-    width: 47%;
+    width: 46%;
     display: inline-block;
     position: relative;
     background-color: #F9F9F9;
@@ -707,6 +708,7 @@ a:hover{
             border:none;
             height: 55px;
             border-radius: 3px;
+            overflow: hidden;
         }
     }
 }
@@ -951,13 +953,34 @@ a:hover{
 
 @media screen and (max-width: 64em){
   .secondary-promotion{
-    width: 48.5%;
+    width: 48%;
     margin-right: 27px;
   }
   .secondary-promotion:nth-child(2n+2){
     margin-right: 0px;
   }
 }
+
+@media screen and (max-width: 1024px){
+  .secondary-promotion .secndary-detail{
+    width: 96%;
+  }
+  .section-one{
+    width: 100%;
+  }
+  .cover{
+    height: auto;
+    img{
+      max-width:100%;
+      height:100%;
+    }
+  }
+  .opt-travel-extra{
+    width: 92%;
+  }
+}
+
+
 
 
 

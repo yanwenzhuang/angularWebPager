@@ -11,7 +11,7 @@ body:lang(zh-CN) {
       font-style: normal;
       position: relative;
   }
-  
+
   input, button, select, textarea {
       outline: none;
       -webkit-appearance: none;
@@ -21,9 +21,9 @@ body:lang(zh-CN) {
   textarea{
       resize:none;
   }
-  @media only screen and (min-width: 71.5em){
+  @media only screen and (min-width: 64em){
     .header-top-row{
-        width: 100%; 
+        width: 100%;
         height: 32px;
         background:#006564;
     }
@@ -38,7 +38,7 @@ body:lang(zh-CN) {
 }
 
 
-  @media only screen and (max-width: 71.4375em){
+  @media only screen and (max-width: 63.9375em){
     .header-top-row{
         display: none;
     }
@@ -46,12 +46,12 @@ body:lang(zh-CN) {
         display: none;
     }
     .header-top-row-min{
-        width: 100%; 
+        width: 100%;
         height: 46px;
         background:#006564;
     }
   }
-  @media only screen and (min-width: 71.4375em){
+  @media only screen and (min-width: 64em){
     .header-top-row-min{
         display: none;
     }
@@ -96,7 +96,7 @@ body:lang(zh-CN) {
             }
         }
     }
-      
+
   }
   .left-item-group{
       margin-top: 4px;
@@ -119,7 +119,7 @@ body:lang(zh-CN) {
       padding: 0 15px 0 15px;
   }
   .header-bottom-row{
-      width: 100%; 
+      width: 100%;
       height: 72.2px;
   }
   .header-bottom-row-wrapper{
@@ -178,7 +178,7 @@ body:lang(zh-CN) {
       height: 100%;
       margin: 0 auto;
       position: relative;
-  }   
+  }
   .navigation-header{
       margin: 0 0 15px;
       font-size: 14px;
@@ -195,7 +195,7 @@ body:lang(zh-CN) {
   }
   .site-search-trigger{
       display: table-cell;
-     
+
       padding: 6px 20px 0 15px;
       color: #4c4c4c;
   }
@@ -244,14 +244,14 @@ body:lang(zh-CN) {
       height: 583.16px;
       color: #fff;
       background: #4c4c4c;
-      margin-left:auto; 
+      margin-left:auto;
       margin-right:auto;
   }
   .mega-menu-component{
       width: 985px;
       height: 187px;
       margin: 0 auto;
-      
+
   }
   .mega-column{
       float: left;
@@ -266,8 +266,8 @@ body:lang(zh-CN) {
   }
   .mega-column ul{
       list-style: none;
-      margin: 0; 
-      padding:0; 
+      margin: 0;
+      padding:0;
   }
   .mega-column{
     ul{
@@ -277,17 +277,17 @@ body:lang(zh-CN) {
             color: #0f748f;
         }
     }
-  }  
+  }
   .mega-column{
     a:hover{
         text-decoration: underline;
     }
-  } 
+  }
   .navigation-header{
       margin: 0 0 15px;
       font-size: 14px;
   }
-  
+
   .mega-column-second{
       float: left;
       width: 18.5%;
@@ -299,10 +299,10 @@ body:lang(zh-CN) {
   .mega-column-second{
     ul{
         list-style: none;
-        margin: 0; 
-        padding:0; 
+        margin: 0;
+        padding:0;
     }
-  } 
+  }
   .mega-column-second{
     ul{
         li{
@@ -310,43 +310,43 @@ body:lang(zh-CN) {
             font-size: 12px;
             color: #0f748f;
         }
-    } 
-  } 
+    }
+  }
   .mega-column-second{
     a:hover{
         text-decoration: underline;
     }
-  } 
+  }
   .navigation-item-panel{
     .navigation-hr hr{
         width: 960px;
         margin:0 auto;
     }
-  } 
+  }
   .item-right{
     p{
-        display: inline; 
+        display: inline;
         font-size:15px
     }
-  } 
+  }
   .col-md-2{
     .col-li{
         i{
             float: right;
         }
-    } 
+    }
   }
   .copyright-message{
     img{
         width: auto;
     }
-  } 
+  }
  .mega-column-second{
     .hs{
         color: #0f748f;
         margin: 0;
         font-size: 14px;
-     } 
+     }
  }
  .navigation-mega-column-image{
     width: 185px;
@@ -362,6 +362,5 @@ body:lang(zh-CN) {
     }
     text-decoration:underline #006564;
  }
-  
-  
-  
+
+

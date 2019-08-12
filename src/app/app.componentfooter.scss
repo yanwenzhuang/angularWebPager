@@ -146,7 +146,7 @@
     margin-left: 55px;
   }
   .footer-links{
-    width: 80%;
+    width: 71%;
     margin-left: 190px;
   }
   .footer-section{
@@ -160,7 +160,7 @@
      clear: both;
   }
   .partner-badges{
-    width: 80%;
+    width: 70%;
     margin-left: 176px;
     display: block;
     height: 54px;
@@ -215,4 +215,9 @@
 }
 .clear{
   clear: both;
+}
+@media screen and (max-width: 720px){
+  .footer{
+    margin-top: 750px;
+  }
 }
