@@ -1,17 +1,8 @@
-
-// @media screen and (min-width: 64em){
-  .section-one{
+.section-one{
     width: 960px;
     margin: 0 auto;
-  }
-// }
-// @media screen and (max-width: 64em){
-//   .section-one{
-//     width: 100%;
-//     height: auto;
-//     // margin: 0 auto;
-//   }
-// }
+}
+
 
 .header{
     width: 100%;
@@ -57,31 +48,31 @@
         display: inline-block;
     }
 }
-.promotion{
-    li:first-child{
-        float: left;
-    }
-}
-.primary-promotion{
-    float: right;
-    width: 48.75%;
-    margin-bottom: 2em;
-    position: relative;
-    padding-left: 0;
-}
+// .promotion{
+//     li:first-child{
+//         float: left;
+//     }
+// }
+// .primary-promotion{
+//     float: right;
+//     width: 48.75%;
+//     margin-bottom: 2em;
+//     position: relative;
+//     padding-left: 0;
+// }
 .cover{
     width: 100%;
     height: 312px;
     position: relative;
 }
 .cover img{
-  width: 467px;
+  width: 100%;
   height:311px ;
 }
-.secondary-promotion:nth-child(3n+3){
-    clear: both;
-    margin-left: 0;
-}
+// .secondary-promotion:nth-child(3n+3){
+//     clear: both;
+//     margin-left: 0;
+// }
 
 .detail{
     position: absolute;
@@ -221,21 +212,30 @@ a:hover{
         font-weight: 600;
     }
 }
-@media screen and (min-width: 64em){
+
   .added-value-promotion{
     width: 960px;
     text-align: center;
     margin:0 auto;
+    .row{
+      .card{
+        box-sizing: border-box;
+      }
+    }
+  }
 
-  }
-}
-@media screen and (max-width: 64em){
-  .added-value-promotion{
-    width: 100%;
-    text-align: center;
-    margin:0 auto;
-  }
-}
+// @media screen and (max-width: 64em){
+//   .added-value-promotion{
+//     width: 100%;
+//     text-align: center;
+//     margin:0 auto;
+//   }
+// }
+.added-value-promotion{
+      width: 960px;
+      text-align: center;
+      margin:0 auto;
+    }
 .section-heading{
     font-family: 'Aktiv Grotesk W01 SC Light',sans-serif;
     font-size: 24px;
@@ -253,12 +253,12 @@ a:hover{
     }
 }
 .added-value-promotion ul>li{
-    display: inline-block;
+  float: left;
 }
-@media screen and (min-width: 64em){
-   .card{
-     width: 33%;
-    }
+
+  //  .cards{
+  //    width: 33%;
+  //   }
     .img-box{
       width: 303.99px;
       height: 202px;
@@ -272,46 +272,43 @@ a:hover{
     margin-top: 42px;
     margin-right: 20px;
   }
-}
-@media screen and (max-width: 64em){
-  .card{
-    width: 93%;
-   }
-  .img-box{
-    width: 50%;
-    height: 260px;
-    overflow: hidden;
-    display: inline-block;
-  }
-  .content{
-    width: 50%;
-    border: 1px solid #ebedec;
-    float: right;
-    display: inline-block;
-    height: 258px;
-    padding-bottom: -34px;
-    margin-left: -7px;
-  }
-  .content{
-    .call-to-action{
-      margin-top: 95px;
-      // margin-right: -20%;
-    }
-  }
-  .promotion{
-    position: relative;
-    width: 92%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
+
+// @media screen and (max-width: 64em){
+//   .card{
+//     width: 93%;
+//    }
+//   .img-box{
+//     width: 50%;
+//     height: 260px;
+//     overflow: hidden;
+//     display: inline-block;
+//   }
+//   .content{
+//     width: 50%;
+//     border: 1px solid #ebedec;
+//     float: right;
+//     display: inline-block;
+//     height: 258px;
+//     padding-bottom: -34px;
+//     margin-left: -7px;
+//   }
+//   .content{
+//     .call-to-action{
+//       margin-top: 95px;
+//       // margin-right: -20%;
+//     }
+//   }
+//   .promotion{
+//     position: relative;
+//     width: 92%;
+//     margin-left: auto;
+//     margin-right: auto;
+//   }
+// }
+
 .card{
     a:hover{
-        text-decoration: none;
-    }
-}
-.card{
-    a:hover{
+      text-decoration: none;
         span{
             text-decoration: underline;
         }
@@ -360,31 +357,55 @@ a:hover{
     color: #0f748f;
     font-size: 14px;
     padding-left: 160px;
+    margin-top: 38px;
 }
 .call-to-action{
     i{
         margin-left: 10px;
     }
 }
+@media (min-width: 1200px){
+  .container {
+    max-width: 960px;
+  }
+}
+
 .opt-travel-extra{
-    width: 960px;
-    // height: 160px;
+    width: 100%;
     margin: 35px auto 0;
+    clear: both;
 }
+// .opt-travel-extra{
+//     ul{
+//         margin-left: -12px;
+//         margin-right: -12px;
+//     }
+// }
+// .colmd2{
+//     width: 46%;
+//     display: inline-block;
+//     position: relative;
+//     background-color: #F9F9F9;
+//     margin-bottom: 5px;
+//     margin-left: 12px;
+//     margin-right: 12px;
+// }
 .opt-travel-extra{
-    ul{
-        margin-left: -12px;
-        margin-right: -12px;
+  .row{
+    .col-md-6{
+      box-sizing: border-box;
+      background-color: #f9f9f9;
+      margin-top: 5px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-right: 20px solid #ffff;
+      .opt-arrow-div{
+        i{
+          float: right;
+        }
+      }
     }
-}
-.col-md-2{
-    width: 46%;
-    display: inline-block;
-    position: relative;
-    background-color: #F9F9F9;
-    margin-bottom: 5px;
-    margin-left: 12px;
-    margin-right: 12px;
+  }
 }
 .col-li{
     color: #0f748f;
@@ -401,8 +422,9 @@ a:hover{
 .opt-arrow-div{
     display: inline-block;
     font-size: 18px;
-    width: 85%;
+    width: 83%;
     vertical-align: middle;
+    color: #0f748f;
 }
 .subscrie-travel{
     width: 960px;
@@ -519,8 +541,6 @@ a:hover{
 }
 .subscribe-newsletter-container{
     font-size: 16px;
-}
-.subscribe-newsletter-container{
     margin-left: auto;
     margin-right: auto;
     max-width: 960px;
@@ -552,6 +572,7 @@ a:hover{
     line-height: 1.14;
     font-size: 1.75rem;
     font-weight: 300;
+    margin-bottom: 33px;
     font-family: 'Aktiv Grotesk W01 Light1370681',sans-serif;
     color: #006564;
 }
@@ -929,161 +950,155 @@ a:hover{
     }
 }
 
-.row{
-  margin-left: -12px;
-  margin-right: -12px;
-
-}
-
-
-@media screen and (min-width: 64em){
-  .row{
-    a{
-        display: block;
-        width: 316.79px;
-        height: 400px;
-    }
-  }
+//  .rows{
+//     margin-left: -12px;
+//     margin-right: -12px;
+//     a{
+//         display: block;
+//         width: 316.79px;
+//         height: 400px;
+//     }
+//   }
   .secondary-promotion{
     float: left;
     width: 32%;
     margin-left: 19px;
 }
-}
 
-@media screen and (max-width: 64em){
-  .secondary-promotion{
-    width: 48%;
-    margin-right: 3%;
-  }
-  .secondary-promotion:nth-child(2n+2){
-    margin-right: 0px;
-  }
-}
 
-@media screen and (max-width: 1024px){
-  .secondary-promotion .secndary-detail{
-    width: 96%;
-  }
-  .section-one{
-    width: 100%;
-  }
-  .cover{
-    height: auto;
-    img{
-      max-width:100%;
-      height:100%;
-    }
-  }
-  .opt-travel-extra{
-    width: 92%;
-  }
-}
-@media screen and (max-width: 720px){
-  .tertiarypar{
-    //  margin-top: 115px;
-    .description-multiple-origins{
-      display: block;
-    }
-    .promotion{
-      margin-top: 35px;
-      .primary-promotion{
-        width: 100%;
-        .cover img {
-          width: 100%;
-          height: auto;
-          }
-        .detail{
-          position: absolute;
-          width: 100%;
-          height: 80px;
-          background: rgb(0, 101, 101);
-          bottom: 0;
-          color: #fff;
-          font-size: 20px;
-        }
-      }
-      .secondary-promotion{
-        width: 100%;
-      }
-    }
-    .term-of-services{
-      width: 90%;
-      text-align: center;
-      height: 25px;
-      box-sizing: border-box;
-      margin: 0 auto;
-      display: block;
-      .small-print {
-        font-size: 12px;
-        margin-bottom: 0;
-        color: #4c4c4c;
-        line-height: 22px;
-      }
-    }
-    .actions {
-      margin-top: 15px;
-      width: 100%;
-      text-align: center;
-      color: #0f748f;
-      a {
-        width: 100%;
-        display: block;
-      }
-      .browse{
-        border-bottom: none;
-      }
-    }
-  }
-  .added-value-promotion{
-    .img-box{
-      width: 100%;
-      height: 260px;
-      overflow: hidden;
-      display: inline-block;
-    }
-    .content {
-      width: 100%;
-      border: 1px solid #ebedec;
-      float: right;
-      height: 157px;
-      margin-bottom: 15px;
-      margin-top:-10px;
-      .picture-title{
-         text-align: center;
-      }
-      .picture-description{
-        text-align: center;
-      }
-      .call-to-action{
-        margin: 0 30px 30px 30px;
-        color: #0f748f;
-        font-size: 14px;
-        padding-left: 0px;
-        // margin-top: 15px;
-        border: 1px solid #0f748f;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        .icon-linkedin2{
-          display: none;
-        }
-      }
-    }
-  }
-  .subscribe-newsletter-wrapper{
-    width: 65.83333%;
-    max-width: 632px;
-    margin: 0px auto 0px;
-  }
-  .col-md-2{
-    width: 98%;
-  }
-  .subscribe-newsletter-wrapper{
-    .header{
-      font-size: 16px;
-    }
-  }
-}
+// @media screen and (max-width: 64em){
+//   .secondary-promotion{
+//     width: 48%;
+//     margin-right: 3%;
+//   }
+//   .secondary-promotion:nth-child(2n+2){
+//     margin-right: 0px;
+//   }
+// }
+
+// @media screen and (max-width: 1024px){
+//   .secondary-promotion .secndary-detail{
+//     width: 96%;
+//   }
+//   .section-one{
+//     width: 100%;
+//   }
+//   .cover{
+//     height: auto;
+//     img{
+//       max-width:100%;
+//       height:100%;
+//     }
+//   }
+//   .opt-travel-extra{
+//     width: 92%;
+//   }
+// }
+// @media screen and (max-width: 720px){
+//   .tertiarypar{
+//     //  margin-top: 115px;
+//     .description-multiple-origins{
+//       display: block;
+//     }
+//     .promotion{
+//       margin-top: 35px;
+//       .primary-promotion{
+//         width: 100%;
+//         .cover img {
+//           width: 100%;
+//           height: auto;
+//           }
+//         .detail{
+//           position: absolute;
+//           width: 100%;
+//           height: 80px;
+//           background: rgb(0, 101, 101);
+//           bottom: 0;
+//           color: #fff;
+//           font-size: 20px;
+//         }
+//       }
+//       .secondary-promotion{
+//         width: 100%;
+//       }
+//     }
+//     .term-of-services{
+//       width: 90%;
+//       text-align: center;
+//       height: 25px;
+//       box-sizing: border-box;
+//       margin: 0 auto;
+//       display: block;
+//       .small-print {
+//         font-size: 12px;
+//         margin-bottom: 0;
+//         color: #4c4c4c;
+//         line-height: 22px;
+//       }
+//     }
+//     .actions {
+//       margin-top: 15px;
+//       width: 100%;
+//       text-align: center;
+//       color: #0f748f;
+//       a {
+//         width: 100%;
+//         display: block;
+//       }
+//       .browse{
+//         border-bottom: none;
+//       }
+//     }
+//   }
+//   .added-value-promotion{
+//     .img-box{
+//       width: 100%;
+//       height: 260px;
+//       overflow: hidden;
+//       display: inline-block;
+//     }
+//     .content {
+//       width: 100%;
+//       border: 1px solid #ebedec;
+//       float: right;
+//       height: 157px;
+//       margin-bottom: 15px;
+//       margin-top:-10px;
+//       .picture-title{
+//          text-align: center;
+//       }
+//       .picture-description{
+//         text-align: center;
+//       }
+//       .call-to-action{
+//         margin: 0 30px 30px 30px;
+//         color: #0f748f;
+//         font-size: 14px;
+//         padding-left: 0px;
+//         // margin-top: 15px;
+//         border: 1px solid #0f748f;
+//         padding-top: 10px;
+//         padding-bottom: 10px;
+//         .icon-linkedin2{
+//           display: none;
+//         }
+//       }
+//     }
+//   }
+//   .subscribe-newsletter-wrapper{
+//     width: 65.83333%;
+//     max-width: 632px;
+//     margin: 0px auto 0px;
+//   }
+//   .colmd2{
+//     width: 98%;
+//   }
+//   .subscribe-newsletter-wrapper{
+//     .header{
+//       font-size: 16px;
+//     }
+//   }
+// }
 
 
 

@@ -6,6 +6,9 @@
   <title>网上订票|特价机票|中国内地</title>
 </head>
 
+
+
+
   <header>
     <div class="header-top-row">
       <div class="header-top-row-wrapper">
@@ -329,6 +332,7 @@
       <div class="parsys">
           <div class="image">
             <div class="message-wrapper">
+              <div class="container">
                <a class="section-content">
                    <div class="headline">
                        <b>"国泰学生惠" —— 给你留学之旅的"高配"！</b>
@@ -374,7 +378,10 @@
                        </li>
                    </ul>
                </div>
+              </div>
             </div>
+
+
            </div>
            <a class="section-content-min">
             <div class="headline">
@@ -458,6 +465,7 @@
 
                <div id="book-trip-flight" class="trip-type-panel parbase panel-active panel-open">
                    <div class="flight-booking-panel">
+
                        <form action="#" method="POST" >
                           <div class="field-group book-trip-return-standalone">
                               <input type="radio" class="ui-radio" id="round-trip" name="round-trip" value="R" checked="checked">
@@ -470,8 +478,10 @@
                                   <li class="trip-multicity"><a href="#">多座城市/过境</a></li>
                           </ul>
 
-                           <div class="flight-booking">
-                               <div class="flight-depart">
+                           <div class="row">
+                              <!-- <div class="flight-booking"> -->
+                               <div class="col-6">
+                                  <!-- <div class="flight-depart"> -->
                                    <div class="field-group-departure">
                                       <label for="depart-label" class="field-label label-input">出发地</label>
                                       <input type="text" id="depart-label" name="destination-label" placeholder="北京，(PEK)"
@@ -479,7 +489,8 @@
                                       >
                                   </div>
                                </div>
-                               <div class="flight-arrive">
+                               <div class="col-6">
+                                  <!-- <div class="flight-arrive"> -->
                                   <div class="field-group-departure">
                                       <input type="text" id="destination-label" name="destination-label" placeholder="目的地"
                                        class="field-input-departure" autocomplete="off" onfocus="this.placeholder=''" onblur="this.placeholder='目的地'"
@@ -541,10 +552,8 @@
                              </div>
                            </div>
 
-
-
-                           <div class="flight-tooltip">
-                              <div class="flight-cell">
+                           <div class="row">
+                              <div class="col-lg-3 ">
                                       <div class="field-group">
                                           <span class="span-filled">出发日期</span>
                                               <button class="depart-date" type="button">
@@ -554,7 +563,52 @@
 
                               </div>
 
-                              <div class="flight-cell-border">
+                              <div class="col-lg-3 ">
+                                      <div class="field-group">
+                                              <span class="span-filled">回程日期</span>
+                                                  <button class="depart-date" type="button">
+                                                      <span> 2019年7月5日 星期五</span>
+                                                  </button>
+                                      </div>
+                              </div>
+                              <div class="col-lg-2">
+                                      <div class="field-group">
+                                              <span class="span-filled">乘客/客舱级别</span>
+                                              <button class="depart-date depart-date-passenger" type="button">
+                                                      <span> 1 乘客/经济舱</span>
+                                              </button>
+                                      </div>
+                              </div>
+                              <div class="col-lg-2">
+                                  <div class="number">
+                                    <div class="field-group">
+                                      <input type="text" id="depart-label" name="depart-label"
+                                          class="input-number" placeholder="优惠编号(可选)"
+                                          onfocus="this.placeholder=''" onblur="this.placeholder='优惠编号(可选)'"/>
+                                      <label for="depart-label" class="lable-filled">优惠编号(可选)</label>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-2 flight-arrive-color">
+                                  <button class="button-submit" type="button">
+                                      <span>搜索航班</span>
+                                      <i class="icon-home3"></i>
+                                  </button>
+                              </div>
+                           </div>
+
+                           <!-- <div class="flight-tooltip">
+                              <div class="flight-cell ">
+                                      <div class="field-group">
+                                          <span class="span-filled">出发日期</span>
+                                              <button class="depart-date" type="button">
+                                                  <span> 2019年7月5日 星期五</span>
+                                              </button>
+                                      </div>
+
+                              </div>
+
+                              <div class="flight-cell-border ">
                                       <div class="field-group">
                                               <span class="span-filled">回程日期</span>
                                                   <button class="depart-date" type="button">
@@ -586,8 +640,9 @@
                                       <i class="icon-home3"></i>
                                   </button>
                               </div>
-                          </div>
+                           </div> -->
                        </form>
+
                    </div>
                </div>
 
@@ -601,6 +656,7 @@
        </div>
     <div class="tertiarypar">
         <div class="section-one" id="section-one">
+          <div class="container">
             <div class="header" >
                 <span class="description-multiple-origins">看始发地的最新报价</span>
                 <div class="description-city">
@@ -628,7 +684,181 @@
                     </select>
                 </div>
             </div>
-            <ul class="promotion">
+            <ul class="row ">
+                <li class="col-md-6">
+
+                        <div class="cover">
+                            <img src="../assets/images/bjs1.jpg">
+                            <a>
+                              <div class="detail">
+                                  <div class="description-watch" >
+                                      <div class="item-left">
+                                          <span>香港</span>
+                                          <div class="miscellenous">经济舱</div>
+                                      </div>
+                                      <div class="item-right">
+                                          <span class="type">机票</span>
+                                          <div >
+                                              <span>CNY</span>
+                                              <b>1,992</b>
+                                              <p>起</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                             </a>
+                        </div>
+
+                </li>
+                <li class="col-md-6">
+                        <div class="cover">
+                            <img src="../assets/images/bjs2.jpg">
+                            <a>
+                              <div class="detail">
+                                  <div class="description-watch" >
+                                      <div class="item-left">
+                                          <span>西雅图</span>
+                                          <div class="miscellenous">经济舱</div>
+                                      </div>
+                                      <div class="item-right">
+                                          <span class="type">机票</span>
+                                          <div >
+                                              <span>CNY</span>
+                                              <b>3,654</b>
+                                              <p>起</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </a>
+                        </div>
+
+                </li>
+                <li class="col-lg-4 col-md-6">
+                  <a href="#" class="link">
+                      <div class="information">
+                          <div class="secndary-detail">
+                              <div class="item-left">
+                                  <h4 class="city">马尼拉</h4>
+                                  <div class="cabin-class">经济舱</div>
+                              </div>
+                              <div class="item-right">
+                                  <div class="category">机票</div>
+                                  <div class="price">
+                                      <span class="currency">CNY</span>
+                                      <b class="currency">2,155</b>
+                                      起
+                                  </div>
+                              </div>
+                          </div>
+                     </div>
+                  </a>
+                </li>
+                <li class="col-lg-4 col-md-6">
+                      <a href="#" class="link">
+                        <div class="information">
+                              <div class="secndary-detail">
+                                      <div class="item-left">
+                                          <h4 class="city">墨尔本</h4>
+                                          <div class="cabin-class">经济舱</div>
+                                      </div>
+                                      <div class="item-right">
+                                          <div class="category">机票</div>
+                                          <div class="price">
+                                              <span class="currency">CNY</span>
+                                              <b class="currency">3,396</b>
+                                              起
+                                          </div>
+                                      </div>
+                              </div>
+                        </div>
+                      </a>
+                </li>
+                <li class="col-lg-4 col-md-6">
+                      <a href="#" class="link">
+                        <div class="information">
+                              <div class="secndary-detail">
+                                      <div class="item-left">
+                                          <h4 class="city">洛杉矶</h4>
+                                          <div class="cabin-class">经济舱</div>
+                                      </div>
+                                      <div class="item-right">
+                                          <div class="category">机票</div>
+                                          <div class="price">
+                                              <span class="currency">CNY</span>
+                                              <b class="currency">4,062</b>
+                                              起
+                                          </div>
+                                      </div>
+                              </div>
+                        </div>
+                      </a>
+                </li>
+                <li class="col-lg-4 col-md-6">
+                      <a href="#" class="link">
+                        <div class="information">
+                                        <div class="secndary-detail">
+                                                <div class="item-left">
+                                                    <h4 class="city">奥克兰</h4>
+                                                    <div class="cabin-class">经济舱</div>
+                                                </div>
+                                                <div class="item-right">
+                                                    <div class="category">机票</div>
+                                                    <div class="price">
+                                                        <span class="currency">CNY</span>
+                                                        <b class="currency">3,433</b>
+                                                        起
+                                                    </div>
+                                                </div>
+                                        </div>
+
+                           </div>
+                          </a>
+                </li>
+                <li class="col-lg-4 col-md-6">
+                      <a href="#" class="link">
+                        <div class="information">
+                                        <div class="secndary-detail">
+                                                <div class="item-left">
+                                                    <h4 class="city">巴黎</h4>
+                                                    <div class="cabin-class">经济舱</div>
+                                                </div>
+                                                <div class="item-right">
+                                                    <div class="category">机票</div>
+                                                    <div class="price">
+                                                        <span class="currency">CNY</span>
+                                                        <b class="currency">5,350</b>
+                                                        起
+                                                    </div>
+                                                </div>
+                                        </div>
+
+                           </div>
+                          </a>
+                </li>
+                <li class="col-lg-4 col-md-6">
+                      <a href="#" class="link">
+                        <div class="information">
+                                        <div class="secndary-detail">
+                                                <div class="item-left">
+                                                    <h4 class="city">纽约</h4>
+                                                    <div class="cabin-class">公务舱</div>
+                                                </div>
+                                                <div class="item-right">
+                                                    <div class="category">机票</div>
+                                                    <div class="price">
+                                                        <span class="currency">CNY</span>
+                                                        <b class="currency">18,213</b>
+                                                        起
+                                                    </div>
+                                                </div>
+                                        </div>
+                           </div>
+                          </a>
+                </li>
+            </ul>
+
+            <!-- <ul class="promotion ">
                 <li class="primary-promotion">
 
                         <div class="cover">
@@ -800,7 +1030,7 @@
                            </div>
                           </a>
                 </li>
-            </ul>
+            </ul> -->
             <div class="clear">
 
             </div>
@@ -813,16 +1043,19 @@
                 <a href="#" class="browse">查看目的地指南</a>
                 <a href="#">浏览所有报价</a>
             </div>
-
+          </div>
 
         </div>
+
+
         <div class="added-value-promotion">
+            <div class="container">
               <div class="section-heading">
                   最新消息
               </div>
               <ul class="row">
 
-                  <li class="card">
+                  <li class="card col-lg-4 col-md-12">
                      <a>
                       <div class="img-box">
                           <img src="../assets/images/picture1.jpg" class="img">
@@ -841,7 +1074,7 @@
                       </a>
                   </li>
 
-                  <li class="card">
+                  <li class="card col-lg-4 col-md-12">
                       <a>
                           <div class="img-box">
                               <img src="../assets/images/picture2.jpg" class="img">
@@ -859,7 +1092,7 @@
                       </a>
                   </li>
 
-                  <li class="card">
+                  <li class="card col-lg-4 col-md-12">
                       <a>
                           <div class="img-box">
                               <img src="../assets/images/picture3.jpg" class="img">
@@ -877,15 +1110,17 @@
                       </a>
                   </li>
               </ul>
-          </div>
+            </div>
+        </div>
 
 
           <div class="opt-travel-extra">
+              <div class="container">
                   <div class="section-heading" style="text-align: center">选购更多旅游服务</div>
-                  <ul >
-                      <li class="col-md-2">
+                  <ul class="row">
+                      <li class="col-md-6">
                           <span class="opt-arrow-icon">
-                                  <i class="icon-home3" aria-hidden="true" ></i>
+                                  <i class="icon icon-home3" aria-hidden="true" ></i>
                           </span>
                           <div class="opt-arrow-div">
                           <a class="col-li">
@@ -894,9 +1129,9 @@
                           </a>
                       </div>
                       </li>
-                      <li class="col-md-2">
+                      <li class="col-md-6">
                               <span class="opt-arrow-icon">
-                                      <i class="icon-location-hotel" aria-hidden="true" ></i>
+                                      <i class="icon icon-location-hotel" aria-hidden="true" ></i>
                               </span>
                               <div class="opt-arrow-div">
                               <a class="col-li">
@@ -905,9 +1140,9 @@
                               </a>
                           </div>
                       </li>
-                      <li class="col-md-2">
+                      <li class="col-md-6">
                               <span class="opt-arrow-icon">
-                                      <i class="icon-earth" aria-hidden="true" ></i>
+                                      <i class="icon icon-earth" aria-hidden="true" ></i>
                               </span>
                               <div class="opt-arrow-div">
                               <a class="col-li">
@@ -916,9 +1151,9 @@
                               </a>
                           </div>
                       </li>
-                      <li class="col-md-2">
+                      <li class="col-md-6">
                               <span class="opt-arrow-icon">
-                                      <i class="icon-linkedin2" aria-hidden="true" ></i>
+                                      <i class="icon icon-linkedin2" aria-hidden="true" ></i>
                               </span>
                               <div class="opt-arrow-div">
                               <a class="col-li">
@@ -929,8 +1164,9 @@
                       </li>
                   </ul>
               </div>
+          </div>
 
-              <div class="subscribe-newsletter-container">
+          <div class="subscribe-newsletter-container">
                       <div class="section-wrapper">
                           <div class="subscribe-newsletter">
                               <div class="subscribe-newsletter-wrapper">
@@ -1012,11 +1248,39 @@
 
                       </div>
 
-                  </div>
+          </div>
     </div>
+
+    <div class="container">
+      <ul class="row">
+        <li class="col-lg-4 col-sm-6" style="box-sizing: border-box;border: 1px solid red;">
+          1111
+        </li>
+        <li class="col-lg-4 col-sm-6" style="box-sizing: border-box;border: 1px solid blue;">
+          2222
+        </li>
+        <li class="col-lg-4 col-sm-6" style="box-sizing: border-box; border: 1px solid blue;">
+          3333
+        </li>
+        <li class="col-lg-4 col-sm-6" style="box-sizing: border-box; border: 1px solid blue;">
+          4444
+        </li>
+        <li class="col-lg-4 col-sm-6" style="box-sizing: border-box; border: 1px solid blue;">
+          5555
+        </li>
+        <li class="col-lg-4 col-sm-6" style="box-sizing: border-box; border: 1px solid blue;">
+          6666
+        </li>
+        <li class="col-lg-4 col-sm-6" style="box-sizing: border-box; border: 1px solid blue;">
+          7777
+        </li>
+      </ul>
+    </div>
+
   </main>
 
   <footer class="footer">
+
       <div class="parbase response-footer-container">
           <div class="share-banner-wrapper">
               <div class="share-toolbox">
@@ -1135,4 +1399,7 @@
               </div>
           </div>
       </div>
+
+
   </footer>
+

@@ -30,13 +30,31 @@
     width: 100%;
     overflow: hidden;
   }
+  .home-tabs{
+    .tabs{
+      visibility: hidden;
+    }
+  }
 }
+@media only screen and (max-width: 63.9375em){
+  .opt-cue.fadeIn{
+     visibility: hidden;
+  }
+
+}
+
+// @media (max-width: 576px){
+//   .home-tabs{
+//     display: none;
+//   }
+// }
+
 .image-tab{
     width: 100%;
     height: 490px;
 }
 .message-wrapper{
-    width: 960px;
+    width: 100%;
     margin: 0 auto;
     a:hover{
       text-decoration: none;
@@ -73,6 +91,7 @@
     font-size: 12px;
 }
 .section-content{
+    box-sizing: content-box;
     width:370px;
     padding: 1.5em;
     position: absolute;
@@ -99,6 +118,12 @@
     padding: 4px 8px 0px 19px;
     font-size: .8em;
     cursor: pointer;
+    b{
+      color: #0f748f;
+    }
+    i{
+      color: #0f748f;
+    }
 }
 .fadeIn{
     animation: fadein 1s;
@@ -127,40 +152,42 @@
     height: 52px;
     margin-top: 14px;
     margin-bottom: -8px;
-}
-.tabs{
-    list-style: none;
-    display: table;
-    padding: 0;
-    height: 100%;
-    margin: 0 auto;
-    font-size: 16px;
-    font-weight: 600;
-    li{
-      display: inline-block;
-      width: 239px;
-      height: 100%;
-      border-left: 1px solid #ebedec;
-  }
-  a{
-      display: table;
-      float: none;
+    .tabs{
       width: 100%;
-      height: 100%;
-      color: #fff;
+      list-style: none;
+      display: table;
       padding: 0;
-      background: #4c4c4c;
-      text-align: center;
-      font-size: 1.25em;
-      cursor: pointer;
-      border: 1px dotted transparent;
-      box-sizing: border-box;
-  }
-  a:hover{
-      color:#000;
-      background: #ebedec;
-      text-decoration: none;
-      border: 1px solid transparent;
+      height: 100%;
+      margin: -2px auto 0;
+      font-size: 16px;
+      font-weight: 600;
+      li{
+        display: inline-block;
+        width: 24%;
+        height: 100%;
+        border-left: 1px solid #ebedec;
+        box-sizing: border-box;
+    }
+    a{
+        display: table;
+        float: none;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        padding: 0;
+        background: #4c4c4c;
+        text-align: center;
+        font-size: 1.25em;
+        cursor: pointer;
+        border: 1px dotted transparent;
+        box-sizing: border-box;
+    }
+    a:hover{
+        color:#000;
+        background: #ebedec;
+        text-decoration: none;
+        border: 1px solid transparent;
+    }
   }
 }
 #tab-active {
@@ -169,13 +196,13 @@
     border: 1px solid transparent;
 }
 .span-margin{
-    margin-top: 17px;
+    margin-top: 11px;
 }
-@media screen and (max-width: 720px){
-  .book-trip-tab-panel{
-    display: none;
-  }
-}
+// @media screen and (max-width: 720px){
+//   .book-trip-tab-panel{
+//     display: none;
+//   }
+// }
 .book-trip-tab-panel{
     width: 100%;
     height: 280px;
@@ -447,7 +474,7 @@
 .field-input-departure:focus+label{
     display: block;
 }
-.flight-depart{
+.col-6{
     .label-input{
         cursor: inherit;
         position: absolute;
@@ -488,7 +515,6 @@
     width: 960px;
     height: 52px;
     background: #fff;
-    margin-top: 58px;
     position: relative;
 }
 .flight-cell{
@@ -602,203 +628,203 @@
     color: #4c4c4c;
 }
 
-@media screen and (max-width: 1024px){
-  .book-trip-tab-panel{
-    height: 340px;
-  }
-  .book-trip{
-    width: 92%;;
-  }
-  .flight-booking{
-    width: 100%;
-  }
-  .field-group-departure{
-    width: 96%;
-  }
-  .field-group-departure{
-    margin: 0;
-  }
-  .flight-tooltip{
-     display: none;
-  }
+// @media screen and (max-width: 1024px){
+//   .book-trip-tab-panel{
+//     height: 340px;
+//   }
+//   .book-trip{
+//     width: 92%;;
+//   }
+//   .flight-booking{
+//     width: 100%;
+//   }
+//   .field-group-departure{
+//     width: 96%;
+//   }
+//   .field-group-departure{
+//     margin: 0;
+//   }
+//   .flight-tooltip{
+//      display: none;
+//   }
 
-}
+// }
 .flight-min{
   display: none;
 }
-@media screen and (min-width: 720px) and (max-width: 1024px){
-  .tertiarypar {
-    width: 100%;
-    // height: 1950px;
-    // margin-top: 72px;
-  }
-}
-@media screen and (max-width: 1024px){
-  .opt-cue{
-    visibility: hidden;
-  }
-  .section-content{
-    width: 45%;
-  }
-  .flight-min{
-    width: 100%;
-    display: block;
-    .flight-cell-border{
-        width: 30%;
-        height: 50px;
-        background: #fff;
-        border-left: #ebedec solid 2px;
-        border-bottom: 1px solid #c6c2c1;
-        float: right;
-        margin-right: 6px;
-    }
-  }
-  .flight-booking-min{
-    width: 67%;
-  }
-  .field-input-departure-min{
-    width: 86%;
-  }
-  .message-wrapper{
-    width: 92%;
-    font-size: 14px;
-  }
-  .home-tabs{
-    width: 96%;
-    border-bottom: -6px;
-  }
-  .tabs{
-    margin: 0;
-    width: 100%;
-    li{
-      width: 24.8%;
-      height: 100%;
-    }
-  }
-}
+// @media screen and (min-width: 720px) and (max-width: 1024px){
+//   .tertiarypar {
+//     width: 100%;
+//     // height: 1950px;
+//     // margin-top: 72px;
+//   }
+// }
+// @media screen and (max-width: 1024px){
+  // .opt-cue{
+  //   visibility: hidden;
+  // }
+  // .section-content{
+  //   width: 45%;
+  // }
+  // .flight-min{
+  //   width: 100%;
+  //   display: block;
+  //   .flight-cell-border{
+  //       width: 30%;
+  //       height: 50px;
+  //       background: #fff;
+  //       border-left: #ebedec solid 2px;
+  //       border-bottom: 1px solid #c6c2c1;
+  //       float: right;
+  //       margin-right: 6px;
+  //   }
+  // }
+  // .flight-booking-min{
+  //   width: 67%;
+  // }
+  // .field-input-departure-min{
+  //   width: 86%;
+  // }
+  // .message-wrapper{
+  //   width: 92%;
+  //   font-size: 14px;
+  // }
+  // .home-tabs{
+  //   width: 96%;
+  //   border-bottom: -6px;
+  // }
+  // .tabs{
+  //   margin: 0;
+  //   width: 100%;
+  //   li{
+  //     width: 24.8%;
+  //     height: 100%;
+  //   }
+  // }
+// }
 .prepare-for-flight{
   display: none;
 }
 .book-trip-panel-container{
   display: none;
 }
-@media screen and (max-width: 720px){
-  .message-wrapper{
-    display: none;
-  }
-  .section-content-min{
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-    padding:1.2em;
-    cursor: pointer;
-    background: rgb(0,101,100);
-  }
-  .prepare-for-flight{
-    display: block;
-    background: #ebedec;
-    padding: 0 .625em 1em;
-    margin: 0 auto;
-    .heading{
-      margin: 0;
-      padding-top: 1em;
-      text-align: center;
-      color: #006564;
-      line-height: 30px;
-      font-weight: 300;
-      padding-bottom: 1em;
-      font-size: 20px;
-    }
-    .tabs-wrapper{
-      overflow: hidden;
-      .tabs{
-        border-spacing: .125rem 0;
-        width: 100%;
-        height: 100%;
-        display: table;
-        margin-bottom: .5rem;
-        position: relative;
-        box-sizing: border-box;
-        .tab-link{
-          border: 1px solid transparent;
-          border-radius: 2px;
-          background-color: #0f748f;
-          background: linear-gradient(to top,#0f748f 0,#3391a2 100%);
-          box-shadow: 0 1px 0 0 #c6c2c1;
-          color: #fff;
-          width: 49.3%;
-          height: 100%;
-          padding: .75em;
-          text-align: center;
-          cursor: pointer;
-          display: table-cell;
-          vertical-align: middle;
-          font-size: 18px;
-        }
-      }
-    }
-  }
-  .book-trip-panel-container{
-    display: block;
-    max-width: none;
-    .tab-panel-adaptive{
-      display: block;
-      margin-bottom: 0;
-      background: #ebedec;
-      padding: 0 .75em 1em;
-      box-sizing: border-box;
-      .heading {
-        background: #ebedec;
-        display: block;
-        margin: 0;
-        padding: .6em .8em .3em;
-        text-align: center;
-        font-weight: normal;
-        color: #006564;
-        font-size: 20px;
-      }
-      .trip-type-selection{
-        padding: .7em 0 0;
-        border-bottom: none;
-        .select-flights{
-           float: left;
-           margin: 0 0 1em;
-           width: 48%;
-        }
-        .select-hotels {
-          float: right;
-          margin: 0 0 1em;
-          width: 48%;
-        }
-        .trip-type-small{
-          display: block;
-          padding: .7em 0;
-          position: relative;
-          cursor: pointer;
-          background: #fff;
-          border: 0;
-          border-bottom: 1px solid #c6c2c1;
-          line-height: 1.5;
-          color: #4c4c4c;
-        }
-        .table-block{
-          display: table;
-          margin: 0 auto;
-          border-spacing: .66em 0;
-          .title{
-            font-size: 16px;
-            color: #767676;
-          }
-        }
-        .select-package{
-          padding: .75em 0;
-          margin-bottom: 1em;
-          clear: both;
-        }
-      }
-    }
-  }
-}
+// @media screen and (max-width: 720px){
+//   .message-wrapper{
+//     display: none;
+//   }
+//   .section-content-min{
+//     box-sizing: border-box;
+//     display: block;
+//     width: 100%;
+//     padding:1.2em;
+//     cursor: pointer;
+//     background: rgb(0,101,100);
+//   }
+//   .prepare-for-flight{
+//     display: block;
+//     background: #ebedec;
+//     padding: 0 .625em 1em;
+//     margin: 0 auto;
+//     .heading{
+//       margin: 0;
+//       padding-top: 1em;
+//       text-align: center;
+//       color: #006564;
+//       line-height: 30px;
+//       font-weight: 300;
+//       padding-bottom: 1em;
+//       font-size: 20px;
+//     }
+//     .tabs-wrapper{
+//       overflow: hidden;
+//       .tabs{
+//         border-spacing: .125rem 0;
+//         width: 100%;
+//         height: 100%;
+//         display: table;
+//         margin-bottom: .5rem;
+//         position: relative;
+//         box-sizing: border-box;
+//         .tab-link{
+//           border: 1px solid transparent;
+//           border-radius: 2px;
+//           background-color: #0f748f;
+//           background: linear-gradient(to top,#0f748f 0,#3391a2 100%);
+//           box-shadow: 0 1px 0 0 #c6c2c1;
+//           color: #fff;
+//           width: 49.3%;
+//           height: 100%;
+//           padding: .75em;
+//           text-align: center;
+//           cursor: pointer;
+//           display: table-cell;
+//           vertical-align: middle;
+//           font-size: 18px;
+//         }
+//       }
+//     }
+//   }
+//   .book-trip-panel-container{
+//     display: block;
+//     max-width: none;
+//     .tab-panel-adaptive{
+//       display: block;
+//       margin-bottom: 0;
+//       background: #ebedec;
+//       padding: 0 .75em 1em;
+//       box-sizing: border-box;
+//       .heading {
+//         background: #ebedec;
+//         display: block;
+//         margin: 0;
+//         padding: .6em .8em .3em;
+//         text-align: center;
+//         font-weight: normal;
+//         color: #006564;
+//         font-size: 20px;
+//       }
+//       .trip-type-selection{
+//         padding: .7em 0 0;
+//         border-bottom: none;
+//         .select-flights{
+//            float: left;
+//            margin: 0 0 1em;
+//            width: 48%;
+//         }
+//         .select-hotels {
+//           float: right;
+//           margin: 0 0 1em;
+//           width: 48%;
+//         }
+//         .trip-type-small{
+//           display: block;
+//           padding: .7em 0;
+//           position: relative;
+//           cursor: pointer;
+//           background: #fff;
+//           border: 0;
+//           border-bottom: 1px solid #c6c2c1;
+//           line-height: 1.5;
+//           color: #4c4c4c;
+//         }
+//         .table-block{
+//           display: table;
+//           margin: 0 auto;
+//           border-spacing: .66em 0;
+//           .title{
+//             font-size: 16px;
+//             color: #767676;
+//           }
+//         }
+//         .select-package{
+//           padding: .75em 0;
+//           margin-bottom: 1em;
+//           clear: both;
+//         }
+//       }
+//     }
+//   }
+// }
 
 
 
